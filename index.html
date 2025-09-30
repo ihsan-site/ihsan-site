@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ihsan Home Care — Care, done with excellence.</title>
+  <meta name="description" content="Non-medical home care for Muslim elders across the Bay Area—prayer-time support, halal meals, gentle daily help." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    // Tailwind CDN with inline config for brand colors
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#0E7773',
+              sand: '#F3E9DD',
+              gold: '#C89A3F',
+              charcoal: '#1F2937'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'ui-sans-serif', 'Segoe UI', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'ui-serif', 'Georgia', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --brand-teal: #0E7773;
+      --brand-sand: #F3E9DD;
+      --brand-gold: #C89A3F;
+      --brand-charcoal: #1F2937;
+    }
+    .shadow-soft { box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+  </style>
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ihsan Home Care",
+    "description": "Non-medical home care for Muslim elders across the Bay Area—prayer-time support, halal meals, gentle daily help.",
+    "areaServed": "San Francisco Bay Area",
+    "url": "https://example.com",
+    "telephone": "+1-555-555-0155",
+    "email": "hello@ihsanhomecare.com",
+    "slogan": "Care, done with excellence.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "openingHours": "Mo-Fr 09:00-17:00"
+  }
+  </script>
+</head>
+<body class="bg-brand-sand text-brand-charcoal">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow">Skip to content</a>
+
+  <!-- Header -->
+  <header class="w-full border-b border-slate-200 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl" style="background: var(--brand-teal)" aria-hidden>
+          <span class="text-xl" aria-hidden="true">❤️</span>
+        </div>
+        <div class="leading-tight">
+          <div class="text-sm font-bold text-slate-900">Ihsan Home Care</div>
+          <div class="text-xs text-slate-600">Care, done with excellence.</div>
+        </div>
+      </div>
+      <nav class="hidden gap-6 md:flex" aria-label="Primary">
+        <a href="#services" class="text-sm font-medium text-slate-700 hover:text-slate-900">Services</a>
+        <a href="#how" class="text-sm font-medium text-slate-700 hover:text-slate-900">How it Works</a>
+        <a href="#values" class="text-sm font-medium text-slate-700 hover:text-slate-900">Our Values</a>
+        <a href="#faq" class="text-sm font-medium text-slate-700 hover:text-slate-900">FAQ</a>
+        <a href="#contact" class="text-sm font-medium text-slate-700 hover:text-slate-900">Contact</a>
+      </nav>
+      <div class="hidden items-center gap-3 md:flex">
+        <a href="tel:+15555550155" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-800 shadow-soft hover:bg-slate-50">
+          <span aria-hidden="true">📞</span> (555) 555‑0155
+        </a>
+        <a href="#contact" class="group inline-flex items-center gap-2 rounded-full bg-brand-teal px-5 py-2 text-sm font-semibold text-white shadow-soft hover:opacity-95">
+          Get Care <span aria-hidden="true">➔</span>
+        </a>
+      </div>
+      <button class="md:hidden" aria-label="Open menu" id="openMobile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="hidden border-t border-slate-200 bg-white md:hidden">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#services" class="text-sm font-medium text-slate-700 hover:text-slate-900">Services</a>
+        <a href="#how" class="text-sm font-medium text-slate-700 hover:text-slate-900">How it Works</a>
+        <a href="#values" class="text-sm font-medium text-slate-700 hover:text-slate-900">Our Values</a>
+        <a href="#faq" class="text-sm font-medium text-slate-700 hover:text-slate-900">FAQ</a>
+        <a href="#contact" class="text-sm font-medium text-slate-700 hover:text-slate-900">Contact</a>
+        <div class="flex gap-3 pt-2">
+          <a href="tel:+15555550155" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-800 shadow-soft hover:bg-slate-50">📞 Call</a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-brand-teal px-5 py-2 text-sm font-semibold text-white shadow-soft hover:opacity-95">Get Care</a>
+        </div>
+        <button class="self-end text-sm text-slate-500" id="closeMobile">Close</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative overflow-hidden py-16 md:py-24" style="background: linear-gradient(180deg, var(--brand-sand) 0%, #fff 100%)">
+      <div class="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 py-10 sm:px-6 md:grid-cols-2 md:py-16 lg:px-8">
+        <div>
+          <span class="inline-flex items-center rounded-full border border-emerald-800/20 bg-white/80 px-3 py-1 text-xs font-medium text-emerald-900 shadow-sm backdrop-blur">W‑2 Non‑Medical Home Care • Bay Area</span>
+          <h1 class="mt-4 font-serif text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Care, done with excellence.</h1>
+          <p class="mt-4 max-w-xl text-lg leading-8 text-slate-700">Culturally aligned, non‑medical support for Muslim elders: prayer‑time assistance, halal meal prep, gentle personal care, and trusted companionship.</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="#contact" class="group inline-flex items-center gap-2 rounded-full bg-brand-teal px-5 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95">Request Care <span aria-hidden="true">➔</span></a>
+            <a href="#careers" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-soft hover:bg-slate-50">🤝 Become a Caregiver</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
+            <span>✅ Licensed W‑2 agency</span>
+            <span>🛡️ Registered HCAs</span>
+            <span>⏰ Flexible day/overnight respite</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] w-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
+            <div class="grid h-full w-full place-items-center p-8 text-center">
+              <div>
+                <div class="mx-auto h-14 w-14 grid place-items-center rounded-2xl" style="background: #fff; border: 2px solid var(--brand-teal)"><span style="font-size: 28px">❤️</span></div>
+                <p class="mt-3 text-lg font-semibold text-slate-900">Dignity • Reliability • Cultural Alignment</p>
+                <p class="mt-2 text-slate-600">We honor elders and support families with ihsan—excellence in every visit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-8 -top-8 hidden h-40 w-40 rotate-12 rounded-3xl opacity-10 md:block" style="background: var(--brand-teal)"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+          <h2 class="text-3xl font-bold text-slate-900">Services</h2>
+          <p class="mt-2 text-slate-600">Non‑medical home support tailored to your family’s routines and values.</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">👥</div>
+            <h3 class="text-lg font-semibold text-slate-900">Companionship & Safety</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Conversation, walks, games, and gentle supervision to reduce isolation and fall risk.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">✋</div>
+            <h3 class="text-lg font-semibold text-slate-900">Personal Care (ADLs)</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Bathing, dressing, grooming, toileting assistance—always with privacy and modesty.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">🍽️</div>
+            <h3 class="text-lg font-semibold text-slate-900">Halal Meal Prep</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Meal planning, cooking, hydration reminders, and special‑diet support.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">🌙</div>
+            <h3 class="text-lg font-semibold text-slate-900">Prayer‑Time Support</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Respect for salah times; assistance with wudu within non‑medical scope.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">📅</div>
+            <h3 class="text-lg font-semibold text-slate-900">Escorts & Errands</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Accompaniment to mosque, appointments, and shopping; light housekeeping.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">⏰</div>
+            <h3 class="text-lg font-semibold text-slate-900">Respite Care Blocks</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Daytime (3/6/8/12h) and overnight non‑medical respite so family caregivers can rest.</p>
+          </div>
+        </div>
+        <div class="mt-8 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+          <strong>Note:</strong> We are a non‑medical agency. We do not provide injections, wound care, or other clinical services.
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+          <h2 class="text-3xl font-bold text-slate-900">How it works</h2>
+          <p class="mt-2 text-slate-600">Clear steps. Compassionate care.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-4">
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white" style="background: var(--brand-teal)">1</div>
+            <p class="text-slate-700">Call or message us</p>
+          </div>
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white" style="background: var(--brand-teal)">2</div>
+            <p class="text-slate-700">Personalized care plan</p>
+          </div>
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white" style="background: var(--brand-teal)">3</div>
+            <p class="text-slate-700">Caregiver match (gender on request)</p>
+          </div>
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white" style="background: var(--brand-teal)">4</div>
+            <p class="text-slate-700">Ongoing supervision</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section id="values" class="py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+          <h2 class="text-3xl font-bold text-slate-900">Our values</h2>
+          <p class="mt-2 text-slate-600">Dignity, reliability, and care with ihsan.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">🛡️</div>
+            <h3 class="text-lg font-semibold text-slate-900">Trust & Safety</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Registered HCAs, background checks, training, and supervised quality visits.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">❤️</div>
+            <h3 class="text-lg font-semibold text-slate-900">Cultural Alignment</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Halal meals, prayer‑time support, modesty, and family partnership.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background: var(--brand-sand)">⭐</div>
+            <h3 class="text-lg font-semibold text-slate-900">Excellence (Ihsan)</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Prompt communication, reliable schedules, and compassionate professionals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 flex items-center justify-center gap-2 text-slate-700">
+          <span aria-hidden="true">📍</span>
+          <p>Serving the San Francisco Bay Area</p>
+        </div>
+        <div class="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 text-center text-sm text-slate-600">
+          San Jose • Santa Clara • Sunnyvale • Fremont • Hayward • Oakland • Berkeley • San Francisco • Daly City • San Mateo • Pleasanton • and nearby cities.
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+          <h2 class="text-3xl font-bold text-slate-900">FAQs</h2>
+          <p class="mt-2 text-slate-600">If you have more questions, we’re happy to help.</p>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="rounded-xl border border-slate-200 bg-white">
+            <button class="faq-toggle flex w-full items-center justify-between p-4 text-left">
+              <span class="font-semibold text-slate-900">Are you a medical provider?</span>
+              <span aria-hidden="true">➔</span>
+            </button>
+            <div class="faq-content hidden px-4 pb-4 text-slate-600">
+              No. We are a non‑medical home‑care agency (W‑2). Our caregivers assist with ADLs/IADLs, safety supervision, halal meal prep, reminders, and companionship. We don’t perform clinical tasks such as injections or wound care.
+            </div>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white">
+            <button class="faq-toggle flex w-full items-center justify-between p-4 text-left">
+              <span class="font-semibold text-slate-900">Can we request a same‑gender caregiver?</span>
+              <span aria-hidden="true">➔</span>
+            </button>
+            <div class="faq-content hidden px-4 pb-4 text-slate-600">
+              Yes. We offer gender‑concordant staffing on request, subject to availability and scheduling.
+            </div>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white">
+            <button class="faq-toggle flex w-full items-center justify-between p-4 text-left">
+              <span class="font-semibold text-slate-900">Do you serve non‑Muslim families?</span>
+              <span aria-hidden="true">➔</span>
+            </button>
+            <div class="faq-content hidden px-4 pb-4 text-slate-600">
+              Yes. We welcome all families while maintaining our cultural‑alignment strengths and training.
+            </div>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white">
+            <button class="faq-toggle flex w-full items-center justify-between p-4 text-left">
+              <span class="font-semibold text-slate-900">What are your minimums and rates?</span>
+              <span aria-hidden="true">➔</span>
+            </button>
+            <div class="faq-content hidden px-4 pb-4 text-slate-600">
+              Typical daytime minimum is 4 hours per visit. Overnight respite is 10–12 hours flat. Contact us for a tailored rate sheet and care plan.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+          <h2 class="text-3xl font-bold text-slate-900">Get in touch</h2>
+          <p class="mt-2 text-slate-600">Let’s build a plan that fits your family.</p>
+        </div>
+        <div class="grid items-start gap-6 md:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <div class="flex items-center gap-3 text-slate-700"><span aria-hidden="true">📞</span> <a href="tel:+15555550155" class="hover:underline">(555) 555‑0155</a></div>
+            <div class="mt-3 flex items-center gap-3 text-slate-700"><span aria-hidden="true">✉️</span> <a href="mailto:hello@ihsanhomecare.com" class="hover:underline">hello@ihsanhomecare.com</a></div>
+            <div class="mt-3 flex items-center gap-3 text-slate-700"><span aria-hidden="true">📍</span> Bay Area, California</div>
+            <div class="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
+              <strong>Families:</strong> Ask about daytime and overnight respite blocks.
+            </div>
+          </div>
+          <form class="md:col-span-2 rounded-2xl border border-slate-200 bg-white p-6" onsubmit="sendMailto(event)">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="text-sm font-medium text-slate-700">Your name</label>
+                <input required name="Name" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-teal focus:outline-none" />
+              </div>
+              <div>
+                <label class="text-sm font-medium text-slate-700">Phone</label>
+                <input required name="Phone" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-teal focus:outline-none" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-sm font-medium text-slate-700">Email</label>
+                <input name="Email" type="email" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-teal focus:outline-none" />
+              </div>
+              <div>
+                <label class="text-sm font-medium text-slate-700">City</label>
+                <input name="City" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-teal focus:outline-none" />
+              </div>
+              <div>
+                <label class="text-sm font-medium text-slate-700">Preferred schedule</label>
+                <select name="Schedule" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-teal focus:outline-none">
+                  <option>Daytime</option>
+                  <option>Evening</option>
+                  <option>Overnight respite</option>
+                  <option>Flexible / to discuss</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-sm font-medium text-slate-700">Tell us a bit about your needs</label>
+                <textarea name="Message" rows="5" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-teal focus:outline-none"></textarea>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-xs text-slate-500">By submitting, you agree to be contacted about your inquiry.</div>
+              <button class="group inline-flex items-center gap-2 rounded-full bg-brand-teal px-5 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95">
+                Send inquiry <span aria-hidden="true">➔</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 text-center">
+          <h3 class="text-2xl font-semibold text-slate-900">Become a Caregiver</h3>
+          <p class="mx-auto mt-2 max-w-2xl text-slate-600">Join a values‑driven team. Registered HCAs, CNAs, and experienced companions welcome. We offer training, reliable schedules, and a supportive culture.</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <a href="mailto:hello@ihsanhomecare.com?subject=Caregiver%20Application" class="inline-flex items-center gap-2 rounded-full bg-brand-teal px-5 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95">Email resume</a>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-soft hover:bg-slate-50">Ask a question</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white/80 py-10 text-sm">
+    <div class="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+      <div>
+        <div class="text-lg font-bold text-slate-900">Ihsan Home Care</div>
+        <p class="mt-2 text-slate-600">Non‑medical home care for Muslim elders across the Bay Area.</p>
+      </div>
+      <div class="flex flex-col gap-2 text-slate-700">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#how" class="hover:underline">How it works</a>
+        <a href="#values" class="hover:underline">Our values</a>
+        <a href="#faq" class="hover:underline">FAQs</a>
+      </div>
+      <div class="flex flex-col gap-2 text-slate-700">
+        <a href="tel:+15555550155" class="inline-flex items-center gap-2 hover:underline">📞 (555) 555‑0155</a>
+        <a href="mailto:hello@ihsanhomecare.com" class="inline-flex items-center gap-2 hover:underline">✉️ hello@ihsanhomecare.com</a>
+        <div class="inline-flex items-center gap-2">📍 Bay Area, CA</div>
+      </div>
+    </div>
+    <div class="mx-auto mt-8 max-w-7xl border-t border-slate-200 px-4 pt-6 text-xs text-slate-500 sm:px-6 lg:px-8">
+      © <span id="year"></span> Ihsan Home Care. All rights reserved. Non‑medical agency. This site does not provide medical advice.
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    document.getElementById('openMobile').addEventListener('click', function () {
+      document.getElementById('mobileNav').classList.remove('hidden');
+    });
+    document.getElementById('closeMobile').addEventListener('click', function () {
+      document.getElementById('mobileNav').classList.add('hidden');
+    });
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-toggle').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var content = btn.parentElement.querySelector('.faq-content');
+        content.classList.toggle('hidden');
+      });
+    });
+
+    // Mailto form handler
+    function sendMailto(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      let body = '';
+      for (const [k,v] of data.entries()) { body += k + ': ' + v + '%0A'; }
+      window.location.href = 'mailto:hello@ihsanhomecare.com?subject=Care%20Inquiry%20-%20Ihsan%20Home%20Care&body=' + body;
+    }
+  </script>
+</body>
+</html>
